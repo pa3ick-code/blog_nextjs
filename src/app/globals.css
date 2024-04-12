@@ -57,7 +57,7 @@ body {
   }
 
   .header_title{
-    @apply text-[14rem] font-bold border-t-[0.5px] border-slate-500 tracking-wider md:text-[3rem] pt-3 leading-none
+    @apply text-[14rem] font-bold border-t-[0.5px] border-slate-500 tracking-wider md:text-[3rem] lg:text-[7rem] pt-3 leading-none
   }
 
   .btn{

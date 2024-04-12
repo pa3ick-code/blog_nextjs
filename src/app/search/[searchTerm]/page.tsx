@@ -33,7 +33,7 @@ export default async function Search({params: {searchTerm}}: Params) {
                         })
                     ):
                     (
-                        <p>No result</p>
+                        <p>error loading {decodeURL} result</p>
                     )
                 }
             </div>

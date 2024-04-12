@@ -26,7 +26,7 @@ export default async function Posts({category, max, title}: Props) {
                         })
                     ):
                     (
-                        <p>Nothing here</p>
+                        <p>error loading {title} post</p>
                     )
                 }
             </div>

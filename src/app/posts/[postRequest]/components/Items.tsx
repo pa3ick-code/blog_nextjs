@@ -27,7 +27,7 @@ export default function Items({ result }: Props) {
     )
   
     const content = (
-        <div className="primary-bg m-2 w-[32%] md:w-full">
+        <div className="primary-bg m-2 w-[32%] lg:w-full">
             {
                 result? items: <p>Nothing Here</p>
             }

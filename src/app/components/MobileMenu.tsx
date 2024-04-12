@@ -12,10 +12,10 @@ export default function MobileMenu() {
     }
 
   return (
-    <nav className="hidden items-center justify-between m-4 flex-wrap sm:flex relative z-30">
+    <nav className="hidden items-center justify-between m-4 flex-wrap lg:flex relative z-30">
 
         <div className="flex items-center relative z-40" >
-            <Link href={'/'} className="logo mr-10">
+            <Link href={'/'} className="logo mr-10 text-white dark:text-white">
                 P.
             </Link>
         </div>

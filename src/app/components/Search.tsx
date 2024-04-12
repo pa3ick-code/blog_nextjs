@@ -20,7 +20,6 @@ export default function Search() {
             onChange={e =>{setSearch(e.target.value);}}
             className="primary-bg max-w-96 rounded-lg"
         />
-        <button type="submit" className="primary-bg ml-4  sm:hidden" >🚀</button>
     </form>
   );
 }

@@ -33,7 +33,7 @@ export default async function Search({params: {searchTerm}}: Params) {
                         })
                     ):
                     (
-                        <p>Nothing here</p>
+                        <p>No result</p>
                     )
                 }
             </div>

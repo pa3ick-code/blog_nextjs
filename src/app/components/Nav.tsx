@@ -8,12 +8,12 @@ export default function Nav() {
 
   return (
     <>
-      <nav className="flex items-center justify-between mt-8 mb-8 flex-wrap sm:hidden md:justify-end lg:justify-end">
+      <nav className="flex items-center justify-between mt-8 mb-8 flex-wrap lg:hidden lg:justify-end">
         <div className=" flex items-center justify-between md:w-full lg:w-full">
-            <Link href={'/'} className="logo mr-10">
+            <Link href={'/'} className="logo mr-10 text-white dark:text-white">
                 P.
             </Link>
-            <div className="font-light text-slate-500">
+            <div className="text-slate-500">
                 <Link href={'/posts/entertainmet'} className="nav_link"> Entertainmet </Link>
                 <Link href={'/posts/technology'} className="nav_link"> Technology </Link>
                 <Link href={'/posts/business'} className="nav_link"> Business </Link>

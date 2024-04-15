@@ -10,7 +10,7 @@ type Props = {
 export default async function Posts({category, max, title}: Props) {
     const getPostData = await getPosts({category, max});
     const postData = await getPostData;
-    const posts: Result[] | undefined =  await postData;
+    const posts: Result[] | undefined = postData;
     
     const content = (
          <>

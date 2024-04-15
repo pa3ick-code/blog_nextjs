@@ -7,6 +7,9 @@ type Props = {
     title : string
 }
 
+export const revalidate = 2;
+export const dynamic = 'force-dynamic';
+
 export default async function Posts({category, max, title}: Props) {
     const getPostData = await getPosts({category, max});
     const postData = await getPostData;

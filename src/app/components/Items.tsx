@@ -1,5 +1,6 @@
 import Link from "next/link";
 import GetDate from "../util/GetDate";
+import Image from "next/image";
 
 type Props = {
     result: Result
@@ -8,9 +9,12 @@ type Props = {
 export default function Items({ result }: Props) {
     const items = (
         <Link href={`${result.url}`} target="_blank">
-            <img 
+            <Image 
                 src={result.image} 
                 alt={result.title} 
+                width={500}
+                height={500}
+                // style={{objectFit:'cover'}}
                 className="w-full h-80 object-cover"
             />
             <div className="mt-5">

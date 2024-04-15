@@ -9,7 +9,7 @@ type Params = {
 }
 
 export const metadata: Metadata ={
-    title: "Search"
+    title: "Search resulE"
 }
 
 export default async function Search({params: {searchTerm}}: Params) {

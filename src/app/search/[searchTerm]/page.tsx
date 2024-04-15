@@ -20,24 +20,24 @@ export default async function Search({params: {searchTerm}}: Params) {
 
   const content = (
     <>
-            <div className="mt-16 mb-7 font-semibold text-4xl text-center">
-              <h2>Results</h2>
-              <p className="block font-light text-base">result for {decodeURL}</p>
-            </div>
-            <div className="flex flex-wrap gap-22 justify-center">
-                {   
-                    data?
-                    (
-                        data.map(post => {
-                        return <Items result={post} key={post.publishedAt}/>
-                        })
-                    ):
-                    (
-                        <p>error loading {decodeURL} result</p>
-                    )
-                }
-            </div>
-         </>
+      <div className="mt-16 mb-7 font-semibold text-4xl text-center">
+        <h2>Results</h2>
+        <p className="block font-light text-base">result for {decodeURL}</p>
+      </div>
+      <div className="flex flex-wrap gap-22 justify-center">
+          {   
+            data?
+            (
+                data.map(post => {
+                return <Items result={post} key={post.publishedAt}/>
+                })
+            ):
+            (
+                <p>error loading {decodeURL} result</p>
+            )
+          }
+      </div>
+    </>
   )
 
   return content

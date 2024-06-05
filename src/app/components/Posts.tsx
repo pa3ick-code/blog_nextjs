@@ -1,3 +1,4 @@
+"use client"
 import { useState, useEffect } from 'react'
 import getPosts from "@/lib/getPosts";
 import Items from "./Items";

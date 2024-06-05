@@ -16,6 +16,7 @@ export default function Home() {
   ] 
   const content = (
     <main className="flex min-h-screen flex-col items-center justify-between">
+      <h1 className="header_title">The Blog</h1>
       {
         fetchInfo.map(({id, category, max}) => (
           <div key={id}>

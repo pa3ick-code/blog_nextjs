@@ -1,4 +1,4 @@
-"use client"
+
 import getPosts from "@/lib/getPosts";
 import Items from "./Items";
 

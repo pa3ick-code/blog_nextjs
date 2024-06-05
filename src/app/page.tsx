@@ -8,18 +8,10 @@ export default function Home() {
       <h1 className="header_title">The Blog</h1>
       <Suspense fallback={<h3>Loading...</h3>}>
         <Posts category="general" max="6"/>
-      </Suspense>
-      <Suspense fallback={<h3>Loading...</h3>}>
-        <Posts category="technology" max="3" title="Technology"/>
-      </Suspense>
-      <Suspense fallback={<h3>Loading...</h3>}>
-        <Posts category="business" max="3" title="Business"/>
-      </Suspense>
-      <Suspense fallback={<h3>Loading...</h3>}>
-        <Posts category="science" max="3" title="Science"/>
-      </Suspense>
-      <Suspense fallback={<h3>Loading...</h3>}>
-        <Posts category="health" max="3" title="Health"/>
+        <Posts category="technology" max="3" />
+        <Posts category="business" max="3" />
+        <Posts category="science" max="3" />
+        <Posts category="health" max="3" />
       </Suspense>
     </main>
   )

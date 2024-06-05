@@ -19,9 +19,9 @@ export default async function Posts({category, max}: Props) {
                 {   
                     posts?
                     (
-                        posts.map(post => {
-                        return <Items result={post} key={post.publishedAt}/>
-                        })
+                        posts.map(post => (
+                            <Items result={post} key={post.publishedAt}/>
+                        ))
                     ):
                     (
                         <p>error loading {title} posts</p>

@@ -1,9 +1,8 @@
 "use client"
 import Posts from "./components/Posts";
-import { Suspense } from "react";
 
 export default function Home() {
-  const fetchInfo = [
+  const fetchInfo: (string | number)[] = [
     {id:1, category: "general", max: 6},
     {id:2, category: "technology", max: 3 },
     {id:3, category: "business", max: 3 },
@@ -14,9 +13,9 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-between">
       {
         fetchInfo.map(({id, category, max}) => (
-          <Suspense fallback={<h3>Loading...</h3>} key={id} >
+          <div key={id}>
             <Posts category={category} max={max}/>
-          </Suspense>
+          </div>
         ))
       }
     </main>

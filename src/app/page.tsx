@@ -3,7 +3,7 @@ import Posts from "./components/Posts";
 import { Suspense } from "react";
 
 export default function Home() {
-  const fetchInfo[] = [
+  const fetchInfo = [
     {category: "general", max: 6},
     {category: "technology", max: 3 },
     {category: "business", max: 3 },

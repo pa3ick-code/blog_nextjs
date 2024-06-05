@@ -14,8 +14,8 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-between">
       {
         fetchInfo.map(({id, category, max}) => (
-          <Suspense fallback={<h3>Loading...</h3>}>
-            <Posts key={id} category={category} max={max}/>
+          <Suspense fallback={<h3>Loading...</h3>} key={id} >
+            <Posts category={category} max={max}/>
           </Suspense>
         ))
       }

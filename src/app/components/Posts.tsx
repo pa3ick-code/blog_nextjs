@@ -1,5 +1,5 @@
 "use client"
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import getPosts from "@/lib/getPosts";
 import Items from "./Items";
 
@@ -17,10 +17,6 @@ export default function Posts({category, max}: Props) {
         const postData = await getPostData;
         setPosts(postData);
     }
-
-    useEffect(()=>{
-        GetPost();
-    },[category, max])
     
     const content = (
          <>

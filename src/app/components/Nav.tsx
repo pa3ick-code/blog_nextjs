@@ -14,7 +14,7 @@ export default function Nav() {
                 P.
             </Link>
             <div className="text-slate-500">
-                <Link href={'/posts/entertainmet'} className="nav_link"> Entertainmet </Link>
+                <Link href={'/posts/entertainment'} className="nav_link"> Entertainment </Link>
                 <Link href={'/posts/technology'} className="nav_link"> Technology </Link>
                 <Link href={'/posts/business'} className="nav_link"> Business </Link>
                 <Link href={'/posts/science'} className="nav_link"> Science </Link>

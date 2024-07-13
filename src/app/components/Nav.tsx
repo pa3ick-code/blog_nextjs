@@ -8,7 +8,7 @@ export default function Nav() {
 
   return (
     <>
-      <nav className="flex items-center justify-between mt-8 mb-8 flex-wrap lg:hidden lg:justify-end">
+      <nav className="flex items-center justify-between mt-8 mb-8 flex-wrap lg:hidden lg:justify-end pb-5 border-slate-200 border-b-[0.5px]">
         <div className=" flex items-center justify-between md:w-full lg:w-full">
             <Link href={'/'} className="logo mr-10 text-white dark:text-white">
                 P.

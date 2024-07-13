@@ -7,13 +7,14 @@ type Props = {
     title : string
 }
 
-export const revalidate = 2;
-export const dynamic = 'force-dynamic';
+// export const revalidate = 2;
+// export const dynamic = 'force-dynamic';
 
 export default async function Posts({category, max, title}: Props) {
     const getPostData = await getPosts({category, max});
     const postData = await getPostData;
     const posts: Result[] | undefined =  postData;
+    // console.log(posts)
     const select = title.charAt(0).toUpperCase() + title.slice(1);
 
     

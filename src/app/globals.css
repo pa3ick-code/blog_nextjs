@@ -41,7 +41,8 @@ body {
   }
 
   .primary-bg{
-    @apply border-b bg-gradient-to-b from-zinc-200  backdrop-blur-xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit  lg:rounded-xl lg:border p-3 lg:dark:bg-zinc-800/30 rounded-lg
+    @apply border-b bg-gradient-to-b from-zinc-200  backdrop-blur-xl dark:border-neutral-800
+    dark:bg-zinc-800/30 dark:from-inherit  lg:rounded-xl lg:border p-3 lg:dark:bg-zinc-800/30 rounded-lg
   }
 
   .nav_link{
@@ -57,7 +58,7 @@ body {
   }
 
   .header_title{
-    @apply text-[14rem] font-bold border-t-[0.5px] border-slate-500 tracking-wider md:text-[3rem] lg:text-[7rem] pt-3 leading-none
+    @apply text-[10rem] font-bold tracking-wider md:text-[2.4rem] lg:text-[6rem] pt-3 leading-none
   }
 
   .btn{

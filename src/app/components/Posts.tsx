@@ -1,5 +1,3 @@
-"use client"
-import { useState } from 'react'
 import getPosts from "@/lib/getPosts";
 import Items from "./Items";
 
@@ -8,15 +6,19 @@ type Props = {
     max: string,
 }
 
-export default function Posts({category, max}: Props) {
-    const [posts, setPosts] = useState(Result[] | undefined);
+export default async function Posts({category, max}: Props) {
+    // const [posts, setPosts] = useState();
+    const title = category[0].toUpperCase() + category.slice(1);
 
-    const GetPost = async()=>{
-        const title = category[0].toUpperCase() + category.slice(1);
-        const getPostData = await getPosts({category, max});
-        const postData = await getPostData;
-        setPosts(postData);
-    }
+    const getPostData = await getPosts({category, max});
+    const postData = await getPostData;
+    const posts: Result[] | undefined =  postData;
+    // setPosts(await postData);
+    
+
+    // useEffect(()=>{
+    //     GetPost();
+    // },[GetPost, category, max])
     
     const content = (
          <>
@@ -25,7 +27,7 @@ export default function Posts({category, max}: Props) {
                 {   
                     posts?
                     (
-                        posts.map(post => (
+                        posts.map((post: any)  => (
                             <Items result={post} key={post.publishedAt}/>
                         ))
                     ):
